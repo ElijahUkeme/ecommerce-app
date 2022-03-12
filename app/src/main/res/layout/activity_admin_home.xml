@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.AdminHomeActivity">
+
+    <TextView
+        android:id="@+id/admin_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Welcome Dear Admin"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/marah"
+        android:layout_below="@+id/admin_welcome"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/button_check_and_approve_products"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_maintain_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_check_new_order"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Maintain Products"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_check_new_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_check_delivered_order_category"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Check New Orders"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_check_delivered_order_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_admin_logout_category"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Check Delivered Orders"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_check_and_approve_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Check and Approve New Products"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:layout_above="@+id/button_maintain_products"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_admin_logout_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:text="Logout"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

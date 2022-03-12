@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.elijah.ukeme.ecommerceapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".Activity.Admin.AdminCheckNewProduct"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar"/>
+        <activity android:name=".Activity.Admin.AdminHomeActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar"/>
+        <activity
+            android:name="sellers.SellerHomeActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name="sellers.SellerLoginActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name="sellers.SellerRegistrationActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.User.ResetPasswordActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.AdminMaintainProductsActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.User.SearchProductsActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.DeliveredListActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.DeliveredOrderActivity"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.AdminUserProductActivtity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.AdminNewOrderConfirm"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.Admin.ConfirmFinalOrderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.CartActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.ProductDetailsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.SettingsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.EcommerceApp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sellers.SellerProductCategoryActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="sellers.SellerAddNewProductActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.LoginActiviy"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Activity.User.HomeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

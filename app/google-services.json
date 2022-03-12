@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "687434592249",
+    "project_id": "ecommerce-app-c7f6b",
+    "storage_bucket": "ecommerce-app-c7f6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687434592249:android:a66fbf4c9b4b1fab1f9728",
+        "android_client_info": {
+          "package_name": "com.elijah.ukeme.ecommerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687434592249-joimg737fqigo9mgkmin0cp1jm0lkaep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZuaaxPTQQK3jJTNigloJOUklH7zc1wA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687434592249-joimg737fqigo9mgkmin0cp1jm0lkaep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

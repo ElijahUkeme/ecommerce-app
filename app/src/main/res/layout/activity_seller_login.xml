@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sellers.SellerLoginActivity">
+
+    <ImageView
+        android:id="@+id/seller_image_login"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/sellerlogin"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/seller_title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="Seller Login Form"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/seller_image_login"
+        android:textColor="@color/purple_200"/>
+
+    <EditText
+        android:id="@+id/seller_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_title_login"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/seller_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_login_email"
+        android:hint="Password"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seller_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_login_password"
+        android:text="Login"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:textColor="@color/purple_200"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/seller_not_registered_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Not Registered? Register Here"
+        android:layout_margin="15dp"
+        android:layout_below="@id/seller_login_button"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/purple_200"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

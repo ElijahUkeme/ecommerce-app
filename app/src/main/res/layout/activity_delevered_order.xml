@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Admin.DeliveredOrderActivity">
+
+    <ImageView
+        android:id="@+id/app_logo_image"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_above="@+id/receivers_textview"
+        android:src="@drawable/applogo"/>
+
+
+    <TextView
+        android:id="@+id/receivers_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorPrimary"
+        android:text="Order Received By"
+        android:textSize="25sp"
+        android:layout_marginStart="80dp"/>
+
+    <EditText
+        android:id="@+id/receivers_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_below="@+id/receivers_textview"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:hint="Enter the Receiver's name"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receivers_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"/>
+
+</RelativeLayout>
